@@ -19,6 +19,10 @@ config/name="3d_in_2d"
 run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=400
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
