@@ -15,13 +15,12 @@ _global_script_class_icons={
 
 [application]
 
-config/name="3d_in_2d"
-run/main_scene="res://main.tscn"
+config/name="Path"
 config/icon="res://icon.png"
 
 [display]
 
-window/size/width=405
+window/size/width=400
 
 [rendering]
 

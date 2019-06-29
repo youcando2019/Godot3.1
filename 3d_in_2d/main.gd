@@ -11,9 +11,6 @@ func _process(delta):
 	
 	$"3d".texture = $Viewport.get_texture()
 	
-	$Piece.position.x = $Grid.get_begin().x
-	$Piece.position.y = $Grid.get_begin().y
-	
 	if(time_now - time_previous >= 1):
 		$Viewport/cube.f_rotate()
 		time_previous = time_now
