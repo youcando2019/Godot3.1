@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Textures/rect.png" type="Texture" id=1]
+[ext_resource path="res://Textures/piece.png" type="Texture" id=2]
+[ext_resource path="res://Textures/blue.png" type="Texture" id=3]
+[ext_resource path="res://Grid.gd" type="Script" id=4]
+
+[sub_resource type="TileSet" id=1]
+0/name = "rect.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 27, 27 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shapes = [  ]
+0/z_index = 0
+1/name = "piece.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 27, 27 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shapes = [  ]
+1/z_index = 0
+2/name = "blue.png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 27, 27 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shapes = [  ]
+2/z_index = 0
+
+[node name="main" type="Node2D"]
+
+[node name="Grid" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 27, 27 )
+format = 1
+tile_data = PoolIntArray( 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 262145, 1, 0, 262147, 1, 0, 262149, 0, 0, 262151, 2, 0, 262152, 2, 0, 262153, 1, 0, 262155, 1, 0, 262157, 1, 0, 327685, 0, 0, 327687, 2, 0, 327689, 0, 0, 393217, 1, 0, 393219, 1, 0, 393221, 0, 0, 393223, 2, 0, 393225, 0, 0, 393227, 1, 0, 393229, 1, 0, 458757, 0, 0, 458759, 2, 0, 458761, 0, 0, 524288, 0, 0, 524289, 1, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524295, 2, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 1, 0, 524302, 0, 0, 589824, 0, 0, 589825, 2, 0, 589837, 2, 0, 589838, 0, 0, 655360, 0, 0, 655361, 2, 0, 655362, 2, 0, 655363, 2, 0, 655364, 2, 0, 655365, 2, 0, 655369, 2, 0, 655370, 2, 0, 655371, 2, 0, 655372, 2, 0, 655373, 2, 0, 655374, 0, 0, 720896, 0, 0, 720910, 0, 0, 786432, 0, 0, 786433, 0, 0, 786434, 0, 0, 786435, 0, 0, 786436, 0, 0, 786437, 0, 0, 786439, 2, 0, 786441, 0, 0, 786442, 0, 0, 786443, 0, 0, 786444, 0, 0, 786445, 1, 0, 786446, 0, 0, 851973, 0, 0, 851975, 2, 0, 851977, 0, 0, 917505, 1, 0, 917507, 1, 0, 917509, 0, 0, 917511, 2, 0, 917513, 0, 0, 917515, 1, 0, 917517, 1, 0, 983045, 0, 0, 983047, 2, 0, 983049, 0, 0, 1048577, 1, 0, 1048579, 1, 0, 1048581, 1, 0, 1048582, 2, 0, 1048583, 2, 0, 1048585, 0, 0, 1048587, 1, 0, 1048589, 1, 0, 1114117, 0, 0, 1114118, 0, 0, 1114119, 0, 0, 1114120, 0, 0, 1114121, 0, 0 )
+script = ExtResource( 4 )
