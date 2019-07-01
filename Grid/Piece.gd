@@ -1,4 +1,4 @@
-extends Sprite
+extends Area2D
 
 var count = 0
 var toggle = false
@@ -18,7 +18,8 @@ func move(f_count):
 
 func _input(event):
 	if event.is_action_pressed("click"):
-		move(5)
+		move(1)
+		print("Yes")
 		toggle = true
 	if toggle:
 		if event.is_action_pressed("click"):
