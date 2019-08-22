@@ -23,3 +23,30 @@ texture = ExtResource( 3 )
 
 [node name="collision" type="CollisionShape2D" parent="static"]
 shape = SubResource( 1 )
+
+[node name="static2" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 40.8979, 347.627 )
+rotation = 1.55415
+scale = Vector2( 6, 1 )
+
+[node name="sprite" type="Sprite" parent="static2"]
+texture = ExtResource( 3 )
+
+[node name="collision" type="CollisionShape2D" parent="static2"]
+shape = SubResource( 1 )
+
+[node name="static3" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 358.988, 349.899 )
+rotation = 1.56948
+scale = Vector2( 6, 1 )
+
+[node name="sprite" type="Sprite" parent="static3"]
+texture = ExtResource( 3 )
+
+[node name="collision" type="CollisionShape2D" parent="static3"]
+shape = SubResource( 1 )
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2( 400, 600 )
